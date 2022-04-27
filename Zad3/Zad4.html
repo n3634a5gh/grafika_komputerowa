@@ -1,0 +1,72 @@
+<svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" onload="change_color(evt)">
+
+    <script type="text/javascript">
+        
+        </script>
+
+
+<defs>
+    <g>
+        <polygon id="triangle" points="800,300 1000,800 600,800" transform = "scale(0.7,0.7) translate(200,250)"
+                    sketch:type="MSShapeGroup" 
+                    onload="change_color(evt)">
+                    </polygon>
+    </g>
+</defs> 
+
+
+    <g  id = "scene1" transform="scale(0.7 0.7) translate(200 250)">
+            <g>       
+               <g>
+
+                <polygon id="pol1" points="380,100 365,147 325,176 275,176 235,147 220,100 235,53 275,24 325,24 365,53" 
+                    fill="magenta " sketch:type="MSShapeGroup" transform="translate(300 200)">
+                    </polygon>
+                        <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0,600,300"
+                        to="360,600,300"
+                        begin="0s"
+                        dur="3"
+                        repeatCount="indefinite"
+                        />  
+                </g >
+                <g >
+                    <polygon id="pol2" points="380,100 365,147 325,176 275,176 235,147 220,100 235,53 275,24 325,24 365,53" 
+                    fill="green " sketch:type="MSShapeGroup" transform="translate(700 200)">
+                    </polygon>
+
+                    <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0,1000,300"
+                        to="360,1000,300"
+                        begin="0s"
+                        dur="3"
+                        repeatCount="indefinite"
+                        />
+                </g>
+
+                <rect id="Rectangle" fill="Crimson" sketch:type="MSShapeGroup" x="590" y="290" width="420" height="20"></rect>
+                <circle cx="800" cy="300" r="5" fill="Black"/>
+
+                <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0,800,300"
+                        to="360,800,300"
+                        begin="0s"
+                        dur="6"
+                        repeatCount="indefinite"
+                        />
+            </g>
+    </g>
+</defs>
+
+
+<use xlink: href = "#triangle"  fill= "blue"/>
+<use xlink: href = "#triangle" fill= "#9900CC" transform = "scale(0.7,0.7) translate(-200,-150)" />
+<use xlink: href = "#triangle"  fill= "lime" transform = "scale(0.5,0.5) translate(1400,-150)" />
+
+<use xlink:href = "#scene1"  />
+<use xlink: href = "#scene1" transform = "scale(0.7,0.7) translate(-200,-150)" />
+<use xlink: href = "#scene1" transform = "scale(0.5,0.5) translate(1400,-150)" />
+  </svg>
